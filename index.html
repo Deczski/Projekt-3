@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 3 - CMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="panel">
+        <div class="row h-100">
+            <div class="col-2 panel-left p-0 px-4 text-white text-center">
+                <section class="date-box">
+                    <p class="mb-0 day">Poniedziałek</p>
+                    <p class="mb-0 time">9:00</p>
+                    <p class="mb-0 year text-muted">06/06/06</p>
+                </section>
+
+                <section class="menu-box">
+
+                    <a href="index.html" class="active">
+                        <div class="menu-item">
+                        <i class="fas fa-sliders-h"></i>
+                        <p class="p-0">Strona Główna</p>
+                        </div>
+                    </a>
+
+                    <a href="posts.html">
+                        <div class="menu-item">
+                            <i class="far fa-comments"></i>
+                            <p class="p-0">Posty</p>
+                        </div>
+
+                    </a>
+
+                    <a href="users.html">
+                        <div class="menu-item">
+                            <i class="fas fa-user-friends"></i>
+                            <p class="p-0">Użytkownicy</p>
+                        </div>
+                    </a>
+
+                </section>
+
+                <section class="info-box mt-3">
+                    <p class="m-0">Diamond CMS</p>
+                    <p class="m-0 text-muted">&copy Copyright 2022</p>
+                </section>
+
+            </div>
+            <div class="col-10 panel-right p-0 px-4">
+
+                <div class="row m-0 h-100">
+                    <div class="col-9 mt-5">
+                        <section class="main-stats text-white text-center py-4 px-5">
+                            <h1 class="text-uppercase">Główne Statystki</h1>
+                            <div class="row mb-5">
+
+                                <div class="col-4">
+                                    <div class="data-box p-5 border">
+                                    <h3 class="text-uppercase">Postów</h3>
+                                    <p class="m-0">Łącznie: 12 234 212</p>
+                                    <p class="m-0">W tym miesiącu: 105 703</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="data-box p-5 border">
+                                    <h3 class="text-uppercase">Tematów</h3>
+                                    <p class="m-0">Łącznie: 12 234 212</p>
+                                    <p class="m-0">W tym miesiącu: 105 703</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="data-box p-5 border">
+                                    <h3 class="text-uppercase">Użytkowników</h3>
+                                    <p class="m-0">Łącznie: 12 234 212</p>
+                                    <p class="m-0">W tym miesiącu: 105 703</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="chart" class="py-5 text-dark">
+
+                            </div>
+
+                        </section>
+
+                        <section class="main-table">
+                            <div class="container">
+                                <div class="top-bar d-flex justify-content-between">
+                                    <h3 class="text-white">Ostatnie Posty</h3>
+                                    <div class="btn-group">
+                                        <button class="btn btn-outline-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Sortuj
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li class="dropdown-item" href="#">Według dat</li>
+                                          <li class="dropdown-item" href="#">Według autora</li>
+                                        </ul>
+                                      </div>
+                                </div>
+
+                                <table class="table table-transparent text-light">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Temat</th>
+                                        <th scope="col">Użytkownik</th>
+                                        <th scope="col">Data</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">3</th>
+                                        <td colspan="2">Larry the Bird</td>
+                                        <td>@twitter</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                <div class="d-flex justify-content-center">
+                                  <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                          <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                                </div>  
+                            </div>
+                        </section>
+                        
+                    </div>
+
+                    <aside class="col-3 text-light text-center pe-5">
+                        <section class="logo py-5">
+                            <p class="logo-text">
+                                <i class="far fa-gem"></i>Diamond
+                            </p>
+                            <p>Powerful tool for professionals & cookie lovers.</p>
+                        </section>
+                        <section class="users-online py-5">
+                            <h3 class="text-center">Użytkownicy Online</h3>
+                            <h2 class="text-center fw-bold">47</h2>
+                        </section>
+                        <section class="users-gender">
+                            <h3 class="text-center">Płeć użytkowników</h3>
+                            <div class="row m-0">
+                                <div class="col-6 box">
+                                        <i class="fas fa-male"></i>
+                                        <p>56%</p>
+                                    </div>
+                                    <div class="col-6 box">
+                                        <i class="fas fa-female"></i>
+                                        <p>56%</p>
+                                    </div>
+                                </div>
+                        </section>
+
+                        <section class="users-stats py-5">
+                            <h3 class="text-center">Statystyki</h3>
+                            <div class="form-group mb-4">
+                                <select class="form-select bg-transparent text-light">
+                                    <option selected>Styczeń</option>
+                                    <option>Luty</option>
+                                    <option>Marzec</option>
+                                    <option>Kwiecień</option>
+                                    <option>Maj</option>
+                                    <option>Czerwiec</option>
+                                    <option>Lipiec</option>
+                                    <option>Wrzesień</option>
+                                    <option>Październik</option>
+                                    <option>Listopad</option>
+                                    <option>Grudzień</option>
+                                </select>
+                            </div>
+                        </section>
+
+                        <div class="row m-0">
+                            <div class="col-6 mb-4">
+                                <p class="info">Posty</p>
+                                <p class="number text-muted">123</p>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <p class="info">Rejestracje</p>
+                                <p class="number text-muted">146444</p>
+                            </div>
+
+                            <div class="col-6 mb-4">
+                                <p class="info">Śr. czas - pobyt</p>
+                                <p class="number text-muted">46 min</p>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <p class="info">Śr. czas - aktywność</p>
+                                <p class="number text-muted">24 min</p>
+                            </div>
+                        
+                        
+                            <div class="col-6 mb-4">
+                                <p class="info">Ilość zamówień</p>
+                                <p class="number text-muted">5128</p>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <p class="info">Ilość reklamacji</p>
+                                <p class="number text-muted">6</p>
+                            </div>
+                        </div>
+
+                    </aside>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dff3950191.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+        
+      
+        var options = {
+          series: [{
+          name: 'Aktywni użytkownicy',
+          data: [31, 40, 28, 51, 42, 109, 100]
+        }, {
+          name: 'Posty',
+          data: [11, 32, 45, 32, 34, 52, 41]
+        }],
+          chart: {
+          height: 350,
+          type: 'area',
+          foreColor: 'white'
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'smooth'
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+        },
+        tooltip: {
+          x: {
+            format: 'dd/MM/yy HH:mm'
+          },
+        },
+        legend:{
+          show:false
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+    </script>
+</body>
+</html>

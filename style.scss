@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #181D23;
+}
+.info-top{
+    
+    h1{
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.panel{
+    width: 1600px;
+    height: 1000px;
+    border-radius: 15px;
+
+    &-left{
+        background-color:#4B5769;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        .date-box{
+            height: 160px;
+
+            & .day{
+                font-size: 2rem;
+            }
+
+            & .time{
+                font-size:4rem;
+                font-weight: bold;
+            }
+
+            & .year{
+                font-size: 2rem;
+            }
+        }
+
+        .menu-box{
+
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .active{
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .menu-item{
+
+                color: white;
+                font-size: 2rem;
+
+                i{
+                    font-size: 6rem;
+                    margin-bottom: 0.4rem;
+                }
+
+                p{
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                }
+            }
+
+            a{
+                width: 100%;
+                height: 30%;    
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                border-radius: 15px;
+                border: 2px solid #ddd;
+
+                &:hover{
+                    background-color:transparent;
+                    background-image: linear-gradient(160deg, rgba(0, 110, 255, .25) 0%, rgba(9, 255, 0, 0.25) 100%);
+                }
+            }
+        }
+
+
+
+
+
+
+    }
+
+    // -------------------------------------------
+
+    &-right{
+        background-image: linear-gradient(180deg, rgba(55, 64, 76, 1) 0%, rgba(21, 26, 32, 1) 100%);
+
+        h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .data-box{
+            border-radius: 15px;
+            height: 140px;
+            transition: background-color .3s;
+
+            &:hover{
+                background-color: rgba(255, 255, 255, .08);
+            }
+        }
+
+        h3{
+            margin-bottom: 1em;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        .featured-post{
+
+            .btn{
+                font-size: 1.6rem;
+            }
+
+            .card-title{
+                font-size: 1.8rem;
+            }
+
+            .card-body{
+                font-size: 1.4rem;
+            }
+
+        }
+
+        .post-finder{
+            
+            input, .btn, .find-post, .dropdown-item{
+                font-size: 1.6rem;
+            }
+        }
+
+        .main-table{
+            font-size:1.2rem;
+
+
+
+            & h3{
+                font-size: 2.6rem;
+                color: white;
+                font-weight: bold;
+            }
+
+            & thead, & .dropdown-item{
+                font-size: 1.4rem;
+
+            }
+
+            tbody{
+                font-size: 1.2rem;
+            }
+
+            .btn{
+                font-size: 1.6rem;
+            }
+
+            .page-link{
+                padding: 0.5em 1em;
+                font-size: 1.4rem;
+                background-color:transparent;
+                color: white;
+                transition: 0.5s;
+
+                &:hover{
+                    background-color: rgba(255, 255, 255, .08);
+                }
+            }
+        }
+
+        aside{
+
+            h3{
+                text-transform: uppercase;
+            }
+
+            i{
+                color: white;
+                text-shadow: 0 0 3px white;
+            }
+
+            .logo-text{
+                font-size: 2.4rem;
+            }
+
+            .users-online{
+                h2{
+                    font-size: 2.6rem;
+                }
+            }
+
+            .users-gender{
+
+                .box{
+                    font-size: 3.6rem;
+
+                    p{
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
+            .users-stats{
+
+                option{
+                    background-color: rgba(0, 0, 0, 1);
+                    opacity: 0.5;
+                    color: white;
+                }
+
+                .info{
+                    font-size: 2.6rem;
+                }
+
+                .number{
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
+        .active-users{
+            
+            .card-img{
+                overflow: hidden;
+            }
+
+            .card-body{
+                font-size: 5rem;
+            }
+
+            img{
+                height:180px;
+                width: 450px;
+                object-fit: cover;
+                opacity: .6;
+                transition: opacity .3s, transform .3s;
+
+                &:hover{
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+            }
+
+        }
+
+        .users-list{
+
+            li{
+                padding: 0.5em 1em;
+                margin: 0.2em 0;
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+
+            .btn{
+                font-size: 1.6rem;
+            }
+
+        }
+
+    }
+}
+
+.posts-modal{
+                
+    h3{
+        font-size: 1.9rem;
+        font-weight: bold;
+    }
+    
+    p, .btn{
+        font-size: 1.5rem;
+    }
+
+    .modal-body .btn{
+        text-transform: uppercase;
+    }
+    
+}
+
+.page-link{
+    padding: 0.5em 1em;
+    font-size: 1.4rem;
+    background-color:transparent;
+    color: white;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: rgba(255, 255, 255, .08);
+    }
+}
+
+.logo-text{
+    font-size: 2.4rem;
+
+    i{
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 2rem;
+    }
+
+}
